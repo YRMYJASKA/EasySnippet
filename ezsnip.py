@@ -1,14 +1,13 @@
 #!/usr/bin/env python
 
+import json
 import snippets
 import sys
 import os
-from platform import system
-
 #print("Creating File!")
-if len(sys.argv[1]) < 2:
+if len(sys.argv) < 2:
     print("Too few arguments. See ezsnip -help for help")
-if sys.argv[1] == "cpp":
+elif sys.argv[1] == "cpp":
     #print("CPP!")
     FILE = open("%s.cpp" % sys.argv[2], 'a')
     FILE.close()

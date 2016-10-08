@@ -1,0 +1,6 @@
+Class MyClass {
+public:
+	MyClass();
+	~MyClass();
+private:
+}
