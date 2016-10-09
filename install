@@ -1,0 +1,2 @@
+#!/bin/sh
+echo " export PATH=$PATH:$(readlink -f ezsnip)" >> ~/.bashrc

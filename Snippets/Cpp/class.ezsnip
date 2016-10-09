@@ -1,6 +1,6 @@
 class Class{
 public:
-	Class()
-	~Class()
+	Class();
+	~Class();
 private:
-}
+};
