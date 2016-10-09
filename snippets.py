@@ -10,14 +10,15 @@ def getSnips(directory):
 def WriteSnippet(lang, outfile, snip):
     FILE = open(outfile, 'w')
     if lang == "cpp":
-        snippetList = getSnips("Snippets/Cpp")
-        for x in range(0, len(snippetList)):
-            if snippetList[x] == "%s.ezsnip" % snip:
-                infile = open(snippetList[x], 'r')
-                for line in infile:
-                    FILE.write(line)
-                infile.close()
-                break
+        SnippetsList = getSnips("Snippets/Cpp")
+        print (SnippetsList)
+        x = 0
+        while x < len(SnippetsList):
+            if SnippetsList[x] == "%s.ezsnip" % snip:
+                infile = open("Snippets/Cpp/%s" % SnippetsList[x], 'r')
+                for line in infile.readlines():
+                     FILE.write(line)
+            x = x+1
                 
     elif lang == "header":
         getSnips("Snippets/Header")
@@ -32,4 +33,3 @@ def WriteSnippet(lang, outfile, snip):
     FILE.close()
     return
 
-WriteSnippet("cpp", "moi.cpp", "class")
