@@ -20,14 +20,46 @@ def WriteSnippet(lang, outfile, snip):
                      FILE.write(line)
             x = x+1
                 
-    elif lang == "header":
-        getSnips("Snippets/Header")
+#    elif lang == "header":
+#        SnippetsList = getSnips("Snippets/Header")
+#        #print (SnippetsList)
+#        x = 0
+#        while x < len(SnippetsList):
+#            if SnippetsList[x] == "%s.ezsnip" % snip:
+#                infile = open("Snippets/Header/%s" % SnippetsList[x], 'r')
+#                for line in infile.readlines():
+#                     FILE.write(line)
+#            x = x+1
     elif lang == "ruby":
-        getSnips("Snippets/Ruby")
+        SnippetsList = getSnips("Snippets/Ruby")
+        #print (SnippetsList)
+        x = 0
+        while x < len(SnippetsList):
+            if SnippetsList[x] == "%s.ezsnip" % snip:
+                infile = open("Snippets/Ruby/%s" % SnippetsList[x], 'r')
+                for line in infile.readlines():
+                     FILE.write(line)
+            x = x+1
     elif lang == "c":
-        getSnips("Snippets/C", )
+        SnippetsList = getSnips("Snippets/C")
+        #print (SnippetsList)
+        x = 0
+        while x < len(SnippetsList):
+            if SnippetsList[x] == "%s.ezsnip" % snip:
+                infile = open("Snippets/C/%s" % SnippetsList[x], 'r')
+                for line in infile.readlines():
+                     FILE.write(line)
+            x = x+1
     elif lang == "python":
-        getSnips("Snippets/Python")
+        SnippetsList = getSnips("Snippets/Python")
+        #print (SnippetsList)
+        x = 0
+        while x < len(SnippetsList):
+            if SnippetsList[x] == "%s.ezsnip" % snip:
+                infile = open("Snippets/Python/%s" % SnippetsList[x], 'r')
+                for line in infile.readlines():
+                     FILE.write(line)
+            x = x+1
     else:
         print("Snippets not found")
     FILE.close()
