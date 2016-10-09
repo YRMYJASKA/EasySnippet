@@ -76,3 +76,4 @@ def WriteSnippet(lang, outfile, snip):
     FILE.close()
     return
 
+
