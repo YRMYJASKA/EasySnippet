@@ -9,7 +9,7 @@ import os
 #argv[2] = Snippet
 #argv[3] = File name
 
-#print("Creating File!")
+print("Creating File!")
 if len(sys.argv) < 3:
     print("Too few arguments. See ezsnip -help for help")
 elif sys.argv[1] == "cpp":
@@ -20,21 +20,26 @@ elif sys.argv[1] == "cpp":
 #elif (sys.argv[1] == "header") | (sys.argv[1] == "h"):
 #    #print("Header")
 #    FILE = "%s.h" % sys.argv[3]
-#    snippets.WriteSnippet("cpp", FILE, sys.argv[2])
+#    snippets.WriteSnippet("header", FILE, sys.argv[2])
 elif (sys.argv[1] == "ruby") |  (sys.argv[1] == "rb"):
-    #print("ruby")
+    #print("Ruby")
     FILE = "%s.rb" % sys.argv[3] 
-    snippets.WriteSnippet("cpp", FILE, sys.argv[2])
+    snippets.WriteSnippet("ruby", FILE, sys.argv[2])
 elif sys.argv[1] == "c":
     #print("C")
     FILE = "%s.c" % sys.argv[3] 
-    snippets.WriteSnippet("cpp", FILE, sys.argv[2])
+    snippets.WriteSnippet("c", FILE, sys.argv[2])
 elif (sys.argv[1] == "python") |  (sys.argv[1] == "py"):
-    #print("Python"
+    #print("Python")
     FILE = "%s.py" % sys.argv[3]
-    snippets.WriteSnippet("cpp", FILE, sys.argv[2])
+    snippets.WriteSnippet("python", FILE, sys.argv[2])
+elif sys.argv[1] == "java":
+    #print("Java")
+    FILE = "%s.java" % sys.argv[3]
+    snippets.WriteSnippet("java", FILE, sys.arg[2])
 elif sys.argv[1] == "-help":
     print("help")
 else:
     print("ERROR: Invalid first input. Check ezsnip -help for help")
     exit()
+print("DONE!")

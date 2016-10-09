@@ -60,6 +60,17 @@ def WriteSnippet(lang, outfile, snip):
                 for line in infile.readlines():
                      FILE.write(line)
             x = x+1
+    elif lang == "java":
+        SnippetsList = getSnips("Snippets/Java")
+        #print (SnippetsList)
+        x = 0
+        while x < len(SnippetsList):
+            if SnippetsList[x] == "%s.ezsnip" % snip:
+                infile = open("Snippets/Java/%s" % SnippetsList[x], 'r')
+                for line in infile.readlines():
+                     FILE.write(line)
+            x = x+1
+
     else:
         print("Snippets not found")
     FILE.close()
