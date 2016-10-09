@@ -4,11 +4,11 @@
 Easy way to create code files with premade code snippets
 #Installation
 This program currently only works for linux computers (for now).
-## Prerequisites
+### Prerequisites
 * Git
 * Python 2.7 or newer
 
-## Step-by-step
+### Step-by-step
 1. <code>git clone https://github.com/YRMYJASKA/EasySnippet.git</code>
 
    Insert this into your terminal and press enter.
