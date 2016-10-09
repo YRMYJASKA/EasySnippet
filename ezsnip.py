@@ -16,9 +16,10 @@ elif sys.argv[1] == "cpp":
     #print("CPP!")
     FILE = "%s.cpp" % sys.argv[3]
     snippets.WriteSnippet("cpp", FILE, sys.argv[2])
-elif (sys.argv[1] == "header") | (sys.argv[1] == "h"):
-    #print("Header")
-    FILE = "%s.h" % sys.argv[3] 
+#In development. Feel free to enable this and remove the comments
+#elif (sys.argv[1] == "header") | (sys.argv[1] == "h"):
+#    #print("Header")
+#    FILE = "%s.h" % sys.argv[3] 
 elif (sys.argv[1] == "ruby") |  (sys.argv[1] == "rb"):
     #print("ruby")
     FILE = "%s.rb" % sys.argv[3] 
