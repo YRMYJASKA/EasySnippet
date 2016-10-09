@@ -11,10 +11,11 @@ This program currently only works for linux computers (for now).
 ## Step-by-step
 1. <code>git clone https://github.com/YRMYJASKA/EasySnippet.git</code>
 
-   Insert this into your terminal and press enter
+   Insert this into your terminal and press enter.
 2. <code>export PATH=$PATH: *EasySnippet directory*</code>
-   Put this into your ~/.bashrc file and replace  *EasySnippet directory* with the path to the directory to access ezsnip from the console
-3. Now you can use ezsnip form your terminal like in the example down below. 
+
+   Put this into your ~/.bashrc file and replace  *EasySnippet directory* with the path to the directory to access ezsnip from the console. Then restart your terminal or type <code>source ~/.bashrc</code> into your terminal for it to take effect.
+3. Now you can use ezsnip from your terminal like in the example down below. 
 
 # Usage
 <code>ezsnip cpp class myfile</code>
@@ -22,7 +23,7 @@ This program currently only works for linux computers (for now).
 This makes a c++ file with a class template named myfile
 
 #This project is still in development!
-See the issues page to know what is not working
+See the issues page to know what is not working.
 
 # Supported languages
 
