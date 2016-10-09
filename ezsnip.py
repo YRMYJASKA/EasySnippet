@@ -19,16 +19,20 @@ elif sys.argv[1] == "cpp":
 #In development. Feel free to enable this and remove the comments
 #elif (sys.argv[1] == "header") | (sys.argv[1] == "h"):
 #    #print("Header")
-#    FILE = "%s.h" % sys.argv[3] 
+#    FILE = "%s.h" % sys.argv[3]
+#    snippets.WriteSnippet("cpp", FILE, sys.argv[2])
 elif (sys.argv[1] == "ruby") |  (sys.argv[1] == "rb"):
     #print("ruby")
     FILE = "%s.rb" % sys.argv[3] 
+    snippets.WriteSnippet("cpp", FILE, sys.argv[2])
 elif sys.argv[1] == "c":
     #print("C")
     FILE = "%s.c" % sys.argv[3] 
+    snippets.WriteSnippet("cpp", FILE, sys.argv[2])
 elif (sys.argv[1] == "python") |  (sys.argv[1] == "py"):
     #print("Python"
-    FILE = "%s.py" % sys.argv[3] 
+    FILE = "%s.py" % sys.argv[3]
+    snippets.WriteSnippet("cpp", FILE, sys.argv[2])
 elif sys.argv[1] == "-help":
     print("help")
 else:
