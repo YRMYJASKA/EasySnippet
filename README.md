@@ -19,3 +19,14 @@ This makes a c++ file with a class template named myfile
 
 #This project is still in development!
 See the issues page to know what is not working
+
+# Supportted languages
+
+* C++
+* C
+* Ruby
+* Python
+* Java
+
+# Contributing
+Feel free to contribute to the project. Also report bugs if you can.
