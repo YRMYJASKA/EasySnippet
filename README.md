@@ -1,4 +1,6 @@
-# EasySnippet
+# EasySnippet 
+[![Build Status](https://travis-ci.com/YRMYJASKA/EasySnippet.svg?token=nmXsqUZD4nTpvKQmVwyc&branch=master)](https://travis-ci.com/YRMYJASKA/EasySnippet)
+
 Easy way to create code files with premade code snippets
 
 
