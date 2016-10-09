@@ -12,10 +12,15 @@ This program currently only works for linux computers (for now).
 1. <code>git clone https://github.com/YRMYJASKA/EasySnippet.git</code>
 
    Insert this into your terminal and press enter.
-2. <code>export PATH=$PATH:*Path/To/EasySnippet*</code>
+2. <code>cd EasySnippet</code>
 
-   Put this into your ~/.bashrc file and replace *Path/To/EasySnippet* with the path to the directory of EasySnippet to access ezsnip from the console. Then restart your terminal or type <code>source ~/.bashrc</code> into your terminal for it to take effect.
-3. Now you can use ezsnip from your terminal like in the example down below. 
+   Switch to the EasySnippet directory
+
+3. <code>./install</code>
+
+   put this into the terminal to execute the install bash file. Then restart your terminal.
+
+4. Now you can use ezsnip from your terminal like in the example down below. 
 
 # Usage
 <code>ezsnip cpp class myfile</code>
