@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import os
 def getSnips(directory):
     snipList = []
@@ -7,15 +9,15 @@ def getSnips(directory):
             snipList.append(str(file))
     return snipList
    
-def WriteSnippet(lang, outfile, snip):
+def WriteSnippet(lang, outfile, snip, absdir):
     FILE = open(outfile, 'w')
     if lang == "cpp":
-        SnippetsList = getSnips("Snippets/Cpp")
+        SnippetsList = getSnips(absdir + "/Snippets/Cpp")
         #print (SnippetsList)
         x = 0
         while x < len(SnippetsList):
             if SnippetsList[x] == "%s.ezsnip" % snip:
-                infile = open("Snippets/Cpp/%s" % SnippetsList[x], 'r')
+                infile = open(absdir + "/Snippets/Cpp/%s" % SnippetsList[x], 'r')
                 for line in infile.readlines():
                      FILE.write(line)
             x = x+1
@@ -31,42 +33,42 @@ def WriteSnippet(lang, outfile, snip):
 #                     FILE.write(line)
 #            x = x+1
     elif lang == "ruby":
-        SnippetsList = getSnips("Snippets/Ruby")
+        SnippetsList = getSnips(absdir + "/Snippets/Ruby")
         #print (SnippetsList)
         x = 0
         while x < len(SnippetsList):
             if SnippetsList[x] == "%s.ezsnip" % snip:
-                infile = open("Snippets/Ruby/%s" % SnippetsList[x], 'r')
+                infile = open(absdir + "/Snippets/Ruby/%s" % SnippetsList[x], 'r')
                 for line in infile.readlines():
                      FILE.write(line)
             x = x+1
     elif lang == "c":
-        SnippetsList = getSnips("Snippets/C")
+        SnippetsList = getSnips(absdir + "/Snippets/C")
         #print (SnippetsList)
         x = 0
         while x < len(SnippetsList):
             if SnippetsList[x] == "%s.ezsnip" % snip:
-                infile = open("Snippets/C/%s" % SnippetsList[x], 'r')
+                infile = open(absdir + "/Snippets/C/%s" % SnippetsList[x], 'r')
                 for line in infile.readlines():
                      FILE.write(line)
             x = x+1
     elif lang == "python":
-        SnippetsList = getSnips("Snippets/Python")
+        SnippetsList = getSnips(absdir + "/Snippets/Python")
         #print (SnippetsList)
         x = 0
         while x < len(SnippetsList):
             if SnippetsList[x] == "%s.ezsnip" % snip:
-                infile = open("Snippets/Python/%s" % SnippetsList[x], 'r')
+                infile = open(absdir + "/Snippets/Python/%s" % SnippetsList[x], 'r')
                 for line in infile.readlines():
                      FILE.write(line)
             x = x+1
     elif lang == "java":
-        SnippetsList = getSnips("Snippets/Java")
+        SnippetsList = getSnips(absdir + "/Snippets/Java")
         #print (SnippetsList)
         x = 0
         while x < len(SnippetsList):
             if SnippetsList[x] == "%s.ezsnip" % snip:
-                infile = open("Snippets/Java/%s" % SnippetsList[x], 'r')
+                infile = open(absdir + "/Snippets/Java/%s" % SnippetsList[x], 'r')
                 for line in infile.readlines():
                      FILE.write(line)
             x = x+1
